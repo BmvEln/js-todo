@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet/less" type="text/css" href="./styles/style.less" />
+    <title>Todo</title>
+  </head>
+  <body>
+    <div class="Todo-App">
+      <h1>Todo</h1>
+      <h3 class="Todo-Desc"></h3>
+      <form class="Todo-Form">
+        <input type="text" class="Todo-Input" placeholder="Start creating..." />
+        <button type="submit">Add</button>
+      </form>
+      <ul class="Todo-List" id="Todo"></ul>
+    </div>
+
+    <!--  Подключение less  -->
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <!--  Подключение js  -->
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+
+    <!--  Подключение модулей  -->
+    <script src="js/main.mjs" type="module"></script>
+    <script src="js/server.mjs" type="module"></script>
+    <script src="js/api.mjs" type="module"></script>
+  </body>
+</html>
